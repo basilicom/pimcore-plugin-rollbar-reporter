@@ -1,5 +1,5 @@
 {
-    "name": "basilicom-pimcore-plugin/rollbar",
+    "name": "basilicom-pimcore-plugin/rollbar-reporter",
     "description": "Configure and use rollbar with Pimcore",
     "type": "pimcore-plugin",
     "license": "BSD-3-Clause",
