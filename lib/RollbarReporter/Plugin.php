@@ -5,8 +5,6 @@
 
 namespace RollbarReporter;
 
-require_once 'rollbar.php';
-
 use Pimcore\API\Plugin as PluginLib;
 
 /**
@@ -75,7 +73,7 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
             $environment = 'default';
         }
 
-        $config = array(
+        $rollbarSetup = array(
             // required
             'access_token' => self::$accessToken,
             // optional - environment name. any string will do.
@@ -86,10 +84,10 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
 
         $handler = $config->rollbar->get('handler', 'blocking');
         if ($handler == 'agent') {
-            $config['agent_log_location'] = $config->rollbar->get('agentLogLocation', '/tmp');
+            $rollbarSetup['agent_log_location'] = $config->rollbar->get('agentLogLocation', '/tmp');
         }
 
-        \Rollbar::init($config);
+        \Rollbar::init($rollbarSetup);
 
         self::$isEnabled = true;
 
