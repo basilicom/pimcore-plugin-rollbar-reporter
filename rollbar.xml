@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+    <rollbar>
+        <installed>0</installed>
+        <enabled>0</enabled>
+        <excludeBackend>1</excludeBackend>
+        <excludeCli>1</excludeCli>
+        <accessToken>SET_VALID_TOKEN</accessToken>
+        <handler>blocking</handler>
+        <agentLogLocation>ONLY_USED_FOR_AGENT_HANDLER</agentLogLocation>
+    </rollbar>
+</zend-config>

@@ -1,0 +1,21 @@
+{
+    "name": "basilicom-pimcore-plugin/rollbar",
+    "description": "Configure and use rollbar with Pimcore",
+    "type": "pimcore-plugin",
+    "license": "BSD-3-Clause",
+    "keywords": ["pimcore","rollbar","plugin","log","logger","logging","exception","error"],
+    "homepage": "http://basilicom.de/en/pimcore",
+    "authors": [
+        {
+            "name": "basilicom Team",
+            "email": "info@basilicom.de",
+            "homepage": "http://basilicom.de/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "pimcore/installer-plugin": "~1.3",
+        "rollbar/rollbar": "~0.15.0"
+    }
+}
